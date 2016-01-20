@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     Location loc   = null;
     String sNumber = null;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -57,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (loc != null) {
-                    sendLocationSMS("01036307158", loc);
+                    sendLocationSMS("0103003000", loc);
                 }
 
             }
@@ -86,6 +87,7 @@ public class MainActivity extends AppCompatActivity {
             boolean gps_enabled = false;
             boolean network_enabled = false;
 
+            // GPS 정보상태를 가져오는 메소드(isProviderEnabled) 리턴값으로 부울린값을 넘긴다.
             gps_enabled = locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER);
             network_enabled = locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER);
 
