@@ -17,6 +17,8 @@
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
 
+            </intent-filter>
+            <intent-filter>
 
                 <!--이 밑을 주석처리하면 URLSCHEME이 안되지만, 런처에는 보인다. -->
                 <action android:name="android.intent.action.VIEW" />
